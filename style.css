@@ -1,0 +1,149 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #eaaf66, #a25e4b);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.container {
+    background: white;
+    width: 450px;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.2);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 25px;
+    gap: 10px;
+}
+
+h1 {
+    color: #333;
+    font-size: 24px;
+}
+
+.input-box {
+    display: flex;
+    gap: 10px;
+}
+
+input {
+    flex: 1;
+    min-width: 0;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: none;
+}
+
+button {
+    padding: 10px 15px;
+    background: #ea6a66;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+.preference {
+    background: #333;
+    white-space: nowrap;
+}
+
+ul {
+    list-style: none;
+    margin-top: 20px;
+}
+
+li {
+    background: #f1f1f1;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+}
+
+li span {
+    flex: 1;
+    min-width: 0;
+    overflow-wrap: anywhere;
+    cursor: pointer;
+    color: #333;
+}
+
+.completed {
+    text-decoration: line-through;
+    color: gray;
+}
+
+.update {
+    background: #f39c12;
+}
+
+.delete {
+    background: #e74c3c;
+}
+
+.dark {
+    background: #121212;
+}
+
+.dark .container {
+    background: #252525;
+}
+
+.dark h1 {
+    color: white;
+}
+
+.dark li {
+    background: #3b3b3b;
+}
+
+.dark li span {
+    color: white;
+}
+
+.dark input {
+    background: #333;
+    color: white;
+    border-color: #555;
+}
+
+.dark input::placeholder {
+    color: #bbb;
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 92%;
+        padding: 20px;
+    }
+
+    .header {
+        flex-wrap: wrap;
+    }
+
+    li {
+        flex-wrap: wrap;
+    }
+}
